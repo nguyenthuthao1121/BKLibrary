@@ -9,7 +9,8 @@ public class ConnectionToDB {
     public static Connection ConnectToMySQL() {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            String url = "jdbc:mysql://localhost:3333/BKLibrary";
+//            String url = "jdbc:mysql://localhost:3333/BKLibrary";
+            String url = "jdbc:mysql://localhost:3306/btnhom";
             cnn = DriverManager.getConnection(url, "root", "");
             return cnn;
         } catch (ClassNotFoundException e) {
